@@ -120,128 +120,66 @@ a{
     background: url(../images/index/fangdajing.png) no-repeat 1px 1px;
     background-size: 18px 18px
 } 
-/* 注册 */
-#register{
+#project{
     width: 100%;
-    height: 420px;
 }
-.register-con{
+.project-con{
     width: 996px;
-    height: 100%;
-    margin: 0 auto;
-    color: #626262;
-}
-.register-con .line-first,.line-second{
-    float: left;
-    width: 45%;
-    display: inline-block;
-    border-top: 1px dashed #d5d5d5;
-    margin-top: 14px;
-}
-.register-con .line-second{
-    float: right;
-}
-.register-con .reg{
-    width: 10%;
-    display: inline-block;
-    color: #909090;
-    font-weight: bold;
-    text-align: center;
-    font-size: 16px;
-    line-height: 30px;
-}
-.register-con .bottom{
-    width: 100%;
-    margin:0 auto 20px;
-    padding: 45px 0 55px;
+    margin: 10px auto;
     overflow: hidden;
 }
-.bottom .use,.btn{
-    width: 310px;
-    margin: 0 auto;
-    background: #ededed;
-    height: 40px;
-    margin-bottom: 10px;
-    line-height: 40px;
-}
-.use dd{
-    position: relative;
-}
-.use dt{
+.project-con ul{
     float: left;
-    width: 60px;
-    border-right: 5px #fff solid;
-    text-align: center;
-    padding: 0 5px 0 10px;
-    font-size: 14px;
+    overflow: hidden
 }
-.use input{
+.project-con li{
+    width: 325px;
+    margin-right: 6px;
+    cursor: pointer;
     float: left;
-    display: inline-block;
-    background: none;
-    height: 38px;
-    line-height: 38px;
-    width: 210px;
-    padding-left: 10px;
-    font-size: 14px;
-    border: 1px solid #ededed;
-    outline: none;
+    margin-top: 10px;
 }
-.use-point{
-    /* display: none; */
-    padding-left: 40px;
-    position: absolute;
-    top: 0;
-    left: 300px;
-    width: 105%;
-    height: 32px;
-    line-height: 32px;
-    color: red;
-}
-.use-point span{
-    padding: 0 20px 0 40px;
-    background: url(../images/register/point.png) no-repeat;
-    display: inline-block;
-    line-height: 32px;
-    font-size: 12px
-}
-.use dd a{
-    float: left;
-    padding-left: 8px;
-    height: 36px;
-    line-height: 40px;
-    display: inline-block;
-    font-size: 12px
-}
-.btnBox{
-    width: 310px;
-    margin: 0 auto;
+.project-con li .top{
+    height: 270px;
     overflow: hidden;
 }
-.btnBox a{
-    width: 310px;
-    margin-left: 0;
-    background: #87d0e3;
-    color:#fff;
-    font-size: 16px;
-    font-weight: bold;
-    display: inline-block;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-}
-.use .test{
-    width: 102px;
-}
-.test-img{
-    width: 103px;
-    height: 36px;
-    margin: 2px 6px;
-}
-#telephone,#text-code,#psw,#psw-again{
+.project-con .template{
     display: none;
 }
-
+.project-con li .top img{
+    width: 100%;
+    height: 100%;
+    transition: 1s
+}
+.project-con li .top img:hover{
+    transform: scale(1.05)
+}
+.project-con li .bottom{
+    height: 52px;
+    width: 325px;
+    display: inline-block;
+    background: #87d0e3;
+}
+.project-con li .bottom p{
+    width: 100%;
+    height: 28px;
+    padding: 0px 0px 0px 15px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 13px;
+}
+.project-con li .bottom b{
+    padding-right: 20px;
+    vertical-align: middle;
+    color: #fff;
+    overflow: hidden;
+    display: inline-block;
+    width: 80px;
+    float: right;
+    height: 20px;
+    font-size: 13px;
+    text-align: right;
+}
 /* 帮助中心 */
 #help{
     width: 100%;

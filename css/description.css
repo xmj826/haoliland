@@ -120,128 +120,203 @@ a{
     background: url(../images/index/fangdajing.png) no-repeat 1px 1px;
     background-size: 18px 18px
 } 
-/* 注册 */
-#register{
+#project{
     width: 100%;
-    height: 420px;
 }
-.register-con{
+.project-con{
     width: 996px;
-    height: 100%;
-    margin: 0 auto;
-    color: #626262;
-}
-.register-con .line-first,.line-second{
-    float: left;
-    width: 45%;
-    display: inline-block;
-    border-top: 1px dashed #d5d5d5;
-    margin-top: 14px;
-}
-.register-con .line-second{
-    float: right;
-}
-.register-con .reg{
-    width: 10%;
-    display: inline-block;
-    color: #909090;
-    font-weight: bold;
-    text-align: center;
-    font-size: 16px;
-    line-height: 30px;
-}
-.register-con .bottom{
-    width: 100%;
-    margin:0 auto 20px;
-    padding: 45px 0 55px;
+    margin: 10px auto;
     overflow: hidden;
 }
-.bottom .use,.btn{
-    width: 310px;
-    margin: 0 auto;
-    background: #ededed;
-    height: 40px;
-    margin-bottom: 10px;
-    line-height: 40px;
+.project-con ul{
+    float: left;
+    overflow: hidden
 }
-.use dd{
+.project-con li{
+    width: 325px;
+    margin-right: 6px;
+    cursor: pointer;
+    float: left;
+}
+.project-con li .top{
+    height: 270px;
+    overflow: hidden;
+}
+.project-con li .top img{
+    width: 100%;
+    height: 100%;
+    transition: 1s
+}
+.project-con li .top img:hover{
+    transform: scale(1.05)
+}
+.project-con li .bottom{
+    height: 52px;
+    width: 325px;
+    display: inline-block;
+    background: #87d0e3;
+}
+.project-con li .bottom p{
+    width: 100%;
+    height: 28px;
+    padding: 0px 0px 0px 15px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 13px;
+}
+.project-con li .bottom b{
+    padding-right: 20px;
+    vertical-align: middle;
+    color: #fff;
+    overflow: hidden;
+    display: inline-block;
+    width: 80px;
+    float: right;
+    height: 20px;
+    font-size: 13px;
+    text-align: right;
+}
+/* 购买 */
+#buy{
+    width: 100%;
+}
+.buy-con{
+    width: 996px;
+    margin: 10px auto;
     position: relative;
 }
-.use dt{
+.buy-con .leftImg{
+    width: 485px;
+    height: 485px;
+}
+.buy-con .right-box{
+    width: 485px;
+    height: 100%;
+    float: right;
+}
+.buy-con .right-box img{
+    width: 100%;
+    height: 290px;
+    margin-bottom: 10px;
+}
+.buy-con .right-box .middle{
+    width: 100%;
+    height: 42px;
+    margin-top: 20px;
+}
+.buy-con .right-box .name,.price{
+    color:#2093cc;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 42px;
+}
+.buy-con .right-box .bottom .computed{
+    width: 465px;
+    height: 50px;
+    BACKGROUND: #87d0e3;
     float: left;
-    width: 60px;
-    border-right: 5px #fff solid;
-    text-align: center;
-    padding: 0 5px 0 10px;
-    font-size: 14px;
+    color: #fff;
+    text-align: left;
+    padding-left: 20px;
+    margin: 12px 12px 0px 0px;
+    line-height: 50px;
 }
-.use input{
-    float: left;
-    display: inline-block;
-    background: none;
-    height: 38px;
-    line-height: 38px;
-    width: 210px;
-    padding-left: 10px;
-    font-size: 14px;
-    border: 1px solid #ededed;
-    outline: none;
-}
-.use-point{
-    /* display: none; */
-    padding-left: 40px;
-    position: absolute;
-    top: 0;
-    left: 300px;
-    width: 105%;
-    height: 32px;
-    line-height: 32px;
-    color: red;
-}
-.use-point span{
-    padding: 0 20px 0 40px;
-    background: url(../images/register/point.png) no-repeat;
-    display: inline-block;
-    line-height: 32px;
-    font-size: 12px
-}
-.use dd a{
-    float: left;
-    padding-left: 8px;
-    height: 36px;
-    line-height: 40px;
-    display: inline-block;
-    font-size: 12px
-}
-.btnBox{
-    width: 310px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-.btnBox a{
-    width: 310px;
-    margin-left: 0;
+.bottom .computed button{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #fff;
     background: #87d0e3;
-    color:#fff;
-    font-size: 16px;
-    font-weight: bold;
-    display: inline-block;
-    height: 40px;
+    color: #fff;
+    padding: 3px 8px;
+    outline: none;
+    cursor: pointer;
+}
+.bottom .computed .count{
+    background: #fff;
+    color: #87d0e3;
+    padding: 3px 8px;
+    margin-top: 2px;
+}
+.bottom .cart,.buy{
+    color: #fff;
+    padding-left: 0px;
     text-align: center;
+    background: #87d0e3;
+    width: 235px;
+    height: 40px;
+    float: left;
+    margin-top: 10px;
     line-height: 40px;
+    cursor: pointer;
 }
-.use .test{
-    width: 102px;
+.bottom .buy{
+    margin-left: 15px;
+    background: #ffff00;
+    color: #626262;
 }
-.test-img{
-    width: 103px;
-    height: 36px;
-    margin: 2px 6px;
+.buy-con .popup{
+    position: absolute;
+    border: #d6d5d5 1px solid;
+    height: 154px;
+    width: 330px;
+    background: #fff;
+    padding: 10px 0;
+    clear: both;
+    left: 30%;
+    z-index: 9999;
+    DISPLAY: none;
+    top: 136px;
 }
-#telephone,#text-code,#psw,#psw-again{
-    display: none;
+.popup h3{
+    background: url(../images/index/1.png) 98% no-repeat;
+    width: 100%;
+    height: 22px;
+    text-align: right;
+    cursor: pointer;
 }
-
+.popup p{
+    height: 29px;
+    border-bottom: #d6d5d5 1px solid;
+    font-size: 13px;
+    color: rgb(98, 98, 98)
+}
+.popup p span{
+    height: 28px;
+    width: 25px;
+    vertical-align: middle;
+    background: url(../images/index/2.png) no-repeat;
+    MARGIN: 2px 5px 0px 20px;
+    DISPLAY: inline-block
+}
+.popup div{
+    height: 55px;
+    padding: 25px 16px;
+}
+.popup div a,.goon{
+    font-size: 16px;
+    height: 50px;
+    width: 127px;
+    background: #87d0e3;
+    float: left;
+    color: #fff;
+    text-align: center;
+    margin: 0px 10px;
+    line-height: 50px;
+    cursor: pointer;
+}
+/* 产品介绍 */
+#produce{
+    width: 100%;
+}
+.produce-con{
+    width: 996px;
+    height: 100%;
+    margin: 10px auto;
+    background: #ededed;
+}
+.produce-con img{
+    width: 100%;
+}
 /* 帮助中心 */
 #help{
     width: 100%;

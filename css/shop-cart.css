@@ -120,28 +120,27 @@ a{
     background: url(../images/index/fangdajing.png) no-repeat 1px 1px;
     background-size: 18px 18px
 } 
-/* 注册 */
-#register{
+/* 购物车 */
+#shopCart{
     width: 100%;
-    height: 420px;
 }
-.register-con{
+.shopCart-con{
     width: 996px;
     height: 100%;
     margin: 0 auto;
     color: #626262;
 }
-.register-con .line-first,.line-second{
+.shopCart-con .line-first,.line-second{
     float: left;
     width: 45%;
     display: inline-block;
     border-top: 1px dashed #d5d5d5;
     margin-top: 14px;
 }
-.register-con .line-second{
+.shopCart-con .line-second{
     float: right;
 }
-.register-con .reg{
+.shopCart-con .reg{
     width: 10%;
     display: inline-block;
     color: #909090;
@@ -150,98 +149,133 @@ a{
     font-size: 16px;
     line-height: 30px;
 }
-.register-con .bottom{
+table{
+    border-color: grey;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box
+}
+/* 没有商品 */
+.bottom .null{
+    padding: 100px 0;
+    text-align: center;
+    overflow: hidden;
+    width: 996px;
+    margin: 0 auto 15%;
+}
+.bottom .null a{
+    color: #000;
+    text-decoration: underline;
+    margin: 0 5px;
+}
+/* 有 cart template */ 
+.bottom  .goods{
     width: 100%;
-    margin:0 auto 20px;
-    padding: 45px 0 55px;
-    overflow: hidden;
 }
-.bottom .use,.btn{
-    width: 310px;
-    margin: 0 auto;
-    background: #ededed;
-    height: 40px;
-    margin-bottom: 10px;
-    line-height: 40px;
+.bottom  .goods tr{
+    line-height: 22px;
 }
-.use dd{
-    position: relative;
-}
-.use dt{
-    float: left;
-    width: 60px;
-    border-right: 5px #fff solid;
-    text-align: center;
-    padding: 0 5px 0 10px;
-    font-size: 14px;
-}
-.use input{
-    float: left;
-    display: inline-block;
-    background: none;
-    height: 38px;
-    line-height: 38px;
-    width: 210px;
-    padding-left: 10px;
-    font-size: 14px;
-    border: 1px solid #ededed;
-    outline: none;
-}
-.use-point{
-    /* display: none; */
-    padding-left: 40px;
-    position: absolute;
-    top: 0;
-    left: 300px;
-    width: 105%;
-    height: 32px;
-    line-height: 32px;
-    color: red;
-}
-.use-point span{
-    padding: 0 20px 0 40px;
-    background: url(../images/register/point.png) no-repeat;
-    display: inline-block;
-    line-height: 32px;
-    font-size: 12px
-}
-.use dd a{
-    float: left;
-    padding-left: 8px;
-    height: 36px;
-    line-height: 40px;
-    display: inline-block;
-    font-size: 12px
-}
-.btnBox{
-    width: 310px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-.btnBox a{
-    width: 310px;
-    margin-left: 0;
-    background: #87d0e3;
-    color:#fff;
-    font-size: 16px;
-    font-weight: bold;
-    display: inline-block;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-}
-.use .test{
-    width: 102px;
-}
-.test-img{
-    width: 103px;
-    height: 36px;
-    margin: 2px 6px;
-}
-#telephone,#text-code,#psw,#psw-again{
+.cart{
     display: none;
 }
-
+/* .cart .template{
+    display: none;
+} */
+#formcart{
+    border-bottom: 1px solid #ccc;
+}
+.bottom  .goods tr th{
+    height: 27px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 27px;
+    background: #ededed;
+}
+.template td{
+    background: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.template dl{
+    width:auto;
+    margin-inline-end: 10px 0 0 -20px;
+} 
+.template dl dd{
+    font-size: 14px;
+    float: left;
+    text-align: left;
+    margin-left: 10px;
+}
+.template  td input{
+    border: #d5d5d5 1px solid;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    text-align: center;
+    display: inline-block;
+    line-height: 20px;
+    padding: 0px;
+    margin-right: 3px;
+}
+.template dl dt{
+    overflow: hidden;
+    height: 65px;
+    width: 65px;
+    float: left;
+    padding-bottom: 10px;
+}
+.template dl dt img{
+    width: 100%;
+    height: 100%;
+}
+.template dl dd p{
+    line-height: 80px;
+    font-size: 14px;
+    text-align: left;
+}
+.template button{
+        padding: 0 6px;
+}
+.bottom .foot{
+    width: 100%;
+    padding: 20px 3px;
+    display: none;
+}
+.bottom .foot span{
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+    color: #626262;
+    padding: 3px 5px;
+    line-height: 60px;
+}
+.bottom .foot .buy{
+    float: right;
+    background: #ededed;
+    width: 250px;
+    height: 60px;
+    border: #d5d5d5 1px solid;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bottom .foot .buy .count-price{
+    display: inline-block;
+}
+.bottom .foot .buy .next{
+    background: #ff0;
+    font-size: 14px;
+    height: 30px;
+    padding-left: 13px;
+    display: inline-block;
+    letter-spacing: 0.2em;
+    line-height: 30px;
+    padding-right: 13px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 /* 帮助中心 */
 #help{
     width: 100%;
@@ -249,7 +283,7 @@ a{
 .help-con{
     width: 996px;
     height: 100%;
-    margin: 10px auto;
+    margin: 50px auto 10px;
     background: #ededed;
 }
 .help-con p{

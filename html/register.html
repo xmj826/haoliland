@@ -23,39 +23,37 @@
                     <a href="http://192.168.31.37/Holiland/html/register.html">注册</a>
 
                     <a href="http://192.168.31.37/Holiland/html/login.html">登录</a>
-                    <a href="">
-                        <i></i>X件</a>
-                    <a href="">
-                        <img src="../images/index/dizhi.png" alt=""> 北京</a>
+                    <a href="http://192.168.31.37/Holiland/html/shop-cart.html">
+                        <i></i></a>
                 </div>
                 <div class="navigation">
                     <ul>
                         <li>
-                            <a href="">
+                            <a href="http://192.168.31.37/Holiland/html/projectList.html">
                                 <span>All Products</span>
                                 <span>全部产品</span>
                             </a>
                         </li>
                         <li class="cake">
-                            <a href="">
+                            <a href="http://192.168.31.37/Holiland/html/projectList.html">
                                 <span>Cake Series</span>
                                 <span>蛋糕系列</span>
                             </a>
                             <ol>
-                                <a href="">新品系列</a>
-                                <a href="">经典系列</a>
-                                <a href="">儿童系列</a>
-                                <a href="">尊爱系列</a>
+                                <a href="http://192.168.31.37/Holiland/html/projectList.html">新品系列</a>
+                                <a href="http://192.168.31.37/Holiland/html/projectList.html">经典系列</a>
+                                <a href="http://192.168.31.37/Holiland/html/projectList.html">儿童系列</a>
+                                <a href="http://192.168.31.37/Holiland/html/projectList.html">尊爱系列</a>
                             </ol>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="http://192.168.31.37/Holiland/html/projectList.html">
                                 <span>Wagashi</span>
                                 <span>零食糕点</span>
                             </a>
                         </li>
                         <li style="border-right: none;padding-right: 0">
-                            <a href="">
+                            <a href="http://192.168.31.37//Holiland/html/about-us.html">
                                 <span>About Us</span>
                                 <span>关于我们</span>
                             </a>
@@ -81,42 +79,42 @@
                     <dl class="use">
                         <dt>用户名</dt>
                         <dd>
-                            <input type="text" name="username" autocomplete="off">
-                            <div class="use-point">
+                            <input type="text" name="username" autocomplete="off" class="telephone">
+                            <div class="use-point" id="telephone">
                                 <span class="usemsg">请输入注册手机号码</span>
                             </div>
                         </dd>
                     </dl>
                     <dl class="use">
-                            <dt>验证码</dt>
-                            <dd>
-                                <input type="text" name="username"  autocomplete="off" class="test">
-                                <img src="" alt="" class="test-img">
-                                <div class="use-point">
-                                    <span class="usemsg">请输入验证码</span>
-                                </div>
-                            </dd>
-                        </dl>
-                    <dl class="use">
-                        <dt>密&nbsp;&nbsp;码</dt>
+                        <dt>验证码</dt>
                         <dd>
-                            <input type="password" name="username" class="password"autocomplete="off">
-                            <div class="use-point">
-                                <span class="usemsg">密码必须输入6-20位字符</span>
+                            <input type="text" name="username" autocomplete="off" class="test">
+                            <img src="" alt="" class="test-img">
+                            <div class="use-point" id="text-code">
+                                <span class="usemsg">请输入验证码</span>
                             </div>
                         </dd>
                     </dl>
                     <dl class="use">
-                            <dt>确认密码</dt>
-                            <dd>
-                                <input type="password" name="username" class="password"autocomplete="off">
-                                <div class="use-point">
-                                    <span class="usemsg">请再次输入密码</span>
-                                </div>
-                            </dd>
-                        </dl>
+                        <dt>密&nbsp;&nbsp;码</dt>
+                        <dd>
+                            <input type="password" name="username" class="password" autocomplete="off">
+                            <div class="use-point" id="psw">
+                                <span class="usemsg">密码必须输入6-20位字符(数字+字母+字符)</span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="use">
+                        <dt>确认密码</dt>
+                        <dd>
+                            <input type="password" name="username" class="confirm" autocomplete="off">
+                            <div class="use-point" id="psw-again">
+                                <span class="usemsg">请再次输入密码</span>
+                            </div>
+                        </dd>
+                    </dl>
                     <div class="btnBox">
-                        <a href="" class="sub">注册</a>
+                        <a class="sub" style="cursor: pointer;">注册</a>
                     </div>
                 </form>
             </div>
@@ -222,9 +220,12 @@
                     <img src="../images/index/weixin.jpg" alt="">
                 </div>
             </div>
-
+            <img src="../images/identifying code/01.png" alt="">
         </div>
     </div>
+    <img src="../images/goods/2.2.jpg" alt="">
 </body>
+<script src="../JS/jquery.min.js"></script>
+<script src="../JS/register.js"></script>
 
 </html>

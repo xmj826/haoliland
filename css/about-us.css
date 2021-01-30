@@ -120,6 +120,36 @@ a{
     background: url(../images/index/fangdajing.png) no-repeat 1px 1px;
     background-size: 18px 18px
 } 
+/* 关于我们 */
+#about{
+    width: 100%;
+}
+.about-con{
+    width: 996px;
+    margin: 10px auto;
+}
+.about-con .line-first,.line-second{
+    float: left;
+    width: 45%;
+    display: inline-block;
+    border-top: 1px dashed #d5d5d5;
+    margin-top: 14px;
+}
+.about-con .line-second{
+    float: right;
+}
+.about-con .reg{
+    width: 10%;
+    display: inline-block;
+    color: #909090;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+.about-con img{
+    margin-top: 10px;
+}
 /* 帮助中心 */
 #help{
     width: 100%;
