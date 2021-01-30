@@ -39,6 +39,8 @@ button.onclick = function () {
     }
 }
 
+
+
 //打开
 let chatbox = document.querySelectorAll(".window")[0]
 let chat = document.querySelector(".chat");
@@ -57,5 +59,31 @@ let phone = document.querySelector(".login a");
 if(sessionStorage.getItem("phone")){
     document.querySelectorAll(".login a")[1].remove();
     phone.innerHTML = "您好!" + sessionStorage.getItem("phone");
+    phone.href = ""
+}
+//cookie的写入，查看，修改，删除
+let cookie = {
+    //写入+修改
+    set(key, value, day) {
+        let date = new Date();
+        date.setDate(date.getDate() + 30);
+        document.cookie = key + "=" + value + ";expires=" + date;
+    },
+     //查询
+     get(key) {
+        let arr = document.cookie.split("; ");
+        var o = {};
+        arr.forEach(item => {
+            let key = item.split("=")[0];
+            let value = item.split("=")[1];
+            o[key] = value;
+        })
+        return o?o[key]:o;
+    }
+}
+//30天内免登录
+if(cookie.get("username") && cookie.get("password")){
+    document.querySelectorAll(".login a")[1].remove();
+    phone.innerHTML = "您好!" + cookie.get("username");
     phone.href = ""
 }

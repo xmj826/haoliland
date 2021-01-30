@@ -239,6 +239,14 @@ a{
     color: #626262;
     font-weight: normal;
 }
+.rember{
+    font-size: 14px;
+    margin: 2px 0;
+}
+#rember{
+    margin-left: 43%;
+    margin-right: 1%;
+}
 /* 帮助中心 */
 #help{
     width: 100%;
